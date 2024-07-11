@@ -1,4 +1,5 @@
 #include "class.h"
+#include <iostream>
 
 /*
  * Assigment 3: Make a class!
@@ -14,5 +15,9 @@
 
 int main() {
   // initialize class and run this file
+  DumbClass dumb(1, 2);
+  std::cout << dumb.getA() << std::endl;
+  dumb.setA(7);
+  std::cout << dumb.getA() << std::endl;
   return 0;
 }
